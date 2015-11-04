@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 从这开始
-decription: 宜早不宜迟，宜快不宜慢
+description: 宜早不宜迟，宜快不宜慢
 category:life
 ---
 ##写点什么
