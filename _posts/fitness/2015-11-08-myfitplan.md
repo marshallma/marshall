@@ -5,7 +5,7 @@ description: 只有一点绝不虎头蛇尾
 category: fitness
 ---
 关于健身，在我上大学之前接触很少，对强壮的理解，是武侠小说中的内力深厚，武功高强之类。总之，不是现在我的观念里的强壮musle man。身体是灵魂的容器，更对人的精神有很大的影响，所以对健康的关注，是很必要的。
-<table class="table table-bordered table-striped table-condensed">。
+<table class="table table-bordered table-striped table-condensed">
 <tr>
 <td>运动形式</td>
 <td>时间安排</td>
