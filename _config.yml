@@ -9,3 +9,5 @@ title: Marshall space
 url: https://marshallma.github.io/marshall
 feed: /atom.xml
 author_info: <a href="https://marshallma.github.io/marshall/">Marshall</a>
+
+encoding: utf-8 
