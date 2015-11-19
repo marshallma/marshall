@@ -1,8 +1,35 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author:         Marshall
+    -->
+    <meta charset="utf-8" />
+    <title>Extjs 学习笔记（一） | Marshall space</title>
+    <meta name="author" content="Marshall" />
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="Marshall's Blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="/marshall/css/default.css" type="text/css" />
+    <link rel="shortcut icon" href="/marshall/favicon.ico" type="image/x-icon" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/atom.xml" />
+    <script src="/marshall/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+</head>
+<body>
 
-<link rel="stylesheet" href="/marshall/js/prettify/prettify.css" />
+    <div class="home-menu">
+        <div class="home-icon-con">
+            <a class="home-menu-icon" href="/marshall">Marshall</a>
+            <a class="home-follow" href="#" title="Contact Me">+</a>
+        </div>
+        <div class="home-contact">
+            <a href="" target="_blank" style="margin-left:-5px;"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
+            <a href="" target="_blank" style="text-align:center;"><img src="http://www.douban.com/favicon.ico" alt="" width="22"/></a>
+            <a href="" target="_blank" style="text-align:right"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"/></a>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="/marshall/js/prettify/prettify.css" />
 <style type="text/css">
     body { background:#e8e8e8; }
     @media screen and (max-width: 750px){
@@ -45,9 +72,20 @@ layout: default
 
 <div id="content">
     <div class="entry">
-        <h1 class="entry-title"><a href="{{ page.url | prepend : '/marshall' }}" title="{{ page.title }}">{{ page.title }}</a></h1>
-        <p class="entry-date">{{ page.date|date:"%Y-%m-%d" }}</p>
-        {{ content }}
+        <h1 class="entry-title"><a href="/marshall/extjs01" title="Extjs 学习笔记（一）">Extjs 学习笔记（一）</a></h1>
+        <p class="entry-date">2015-11-19</p>
+        <h1>Extjs</h1>
+
+<p> EXTJS是个适合构建webapp的前端框架，有很多易用的组件，良好的组织架构。总体给我的直观感受是开发迅速，有着成熟的开发模式，易用。如果不是对界面有很高的要求，extjs的默认样式何以满足你的需求。</p>
+
+<p>EXTJS对移动端和web富应用有着很好的支持，touch专门用来开发移动设备的前端页面。同时extjs采用javascript编程，有着js特有的灵活性，同时它又吸取了如java强类型的稳定性和已扩展性的特点。所以，extjs是个很好设计的前端架构。
+如下一个典型exjs开发目录结构
+<img src="http://docs.sencha.com/extjs/6.0/application_architecture/images/file_structure.jpeg" alt="文件结构" title="文件结构" /></p>
+
+<h2>sencha cmd</h2>
+
+<p>sencha cmd 是extjs官方的开发工具，你可以使用它完成生成项目，测试运行，打包等一系列操作，十分方便。</p>
+
     </div>
    
  
@@ -87,29 +125,36 @@ layout: default
 				<li><a class="jp-volume-max" href="#">Max</a></li>
 			</ul>
 		</div>
->>>>>>> 8b67b9f9d71bf394f2dcf282cbc1dba869d78a5d
     </div>
 
     <div class="sidenav">
         <h2>Blog</h2>
         <ul class="artical-list">
-        {% for post in site.categories.blog%}
-            <li><a href="{{ post.url | prepend : '/marshall' }}">{{ post.title }}</a></li>
-        {% endfor %}
+        
+            <li><a href="/marshall/extjs01">Extjs 学习笔记（一）</a></li>
+        
+            <li><a href="/marshall/my-first-blog">我的第一篇测试博文</a></li>
+        
         </ul>
 
         <h2>Life</h2>
         <ul class="artical-list">
-        {% for post in site.categories.life%}
-            <li><a href="{{ post.url | prepend : '/marshall'}}">{{ post.title }}</a></li>
-        {% endfor %}
+        
+            <li><a href="/marshall/controlmylife">controll</a></li>
+        
+            <li><a href="/marshall/writesomething">从这开始</a></li>
+        
+            <li><a href="/marshall/anything">飘飘何所似，天地一沙鸥</a></li>
+        
         </ul>
 
         <h2>Fitness</h2>
         <ul class="artical-list">
-        {% for post in site.categories.fitness%}
-            <li><a href="{{ post.url | prepend : '/marshall'}}">{{ post.title }}</a></li>
-        {% endfor %}
+        
+            <li><a href="/marshall/myfitplan">健身计划</a></li>
+        
+            <li><a href="/marshall/tiger">野蛮其体魄</a></li>
+        
         </ul>
     </div>
     <div id="disqus_thread"> </div>
@@ -201,8 +246,24 @@ $(document).ready(function(){
   })();
     
     var disqus_config = function () {
-        this.page.url ="http://marshallma.github.io"+"{{ page.url | prepend : '/marshall' }}";
-        this.page.identifier ="{{ page.id}}";
+        this.page.url ="http://marshallma.github.io"+"/marshall/extjs01";
+        this.page.identifier ="/extjs01";
   	}
    
  </script>
+
+    <script type="text/javascript">
+        $(function(){
+            $('.home-follow').click(function(e){
+                e.preventDefault();
+
+                if($('.home-contact').is(':visible')){
+                    $('.home-contact').slideUp(100);
+                }else{
+                    $('.home-contact').slideDown(100);
+                }
+            });
+        })
+    </script>
+</body>
+</html>
