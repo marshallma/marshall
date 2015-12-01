@@ -12,4 +12,10 @@ category: life
 曾经的【风华正茂】缺乏对事物的认知，空有一腔热血，却没有一个清晰的做事方法，终于流于表面，淹没在记忆中。I don't care what you wanna do.What you have done makes sense.
 
 广州
-![广州](../../images/20151201223112.jpg)
+<img src="http://7xotic.com1.z0.glb.clouddn.com/QQ图片20151201223112.jpg" height="500"/>
+苏州
+<img src="http://7xotic.com1.z0.glb.clouddn.com/QQ图片20151201223154.jpg" height="500"/>
+上海
+<img src="http://7xotic.com1.z0.glb.clouddn.com/QQ图片20151201223144.jpg" height="500"/>
+
+
